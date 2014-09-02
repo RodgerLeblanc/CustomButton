@@ -1,7 +1,8 @@
 import bb.cascades 1.2
 
 Container {
-    property alias buttonText: myLabel.text
+    property alias text: myLabel.text
+    signal clicked
     
     horizontalAlignment: HorizontalAlignment.Center
     verticalAlignment: VerticalAlignment.Center
@@ -32,8 +33,8 @@ Container {
     // This is how you listen for click event
     gestureHandlers: TapHandler {
         onTapped: {
-            // Do something...
-            console.log("**** Button was tapped ****")
+            // emit clicked() signal
+            clicked()
         }
     }
 }

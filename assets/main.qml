@@ -26,11 +26,15 @@ Page {
             id: myTextField
             text: "This is my button text"
             hintText: "Button text"
-            onTextChanging: myCustomButton.buttonText = text         
+            onTextChanging: myCustomButton.text = text         
         }        
         CustomButton {
             id: myCustomButton
-            buttonText: myTextField.text
+            text: myTextField.text
+            onClicked: {
+                // Do something
+                console.log("Button was clicked")
+            }
         }
     }
 }

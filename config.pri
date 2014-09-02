@@ -39,6 +39,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/CustomButton.qml) \
         $$quote($$BASEDIR/assets/images/emptyButton.amd) \
         $$quote($$BASEDIR/assets/images/emptyButton.png) \
+        $$quote($$BASEDIR/assets/images/voltButton.png) \
         $$quote($$BASEDIR/assets/main.qml)
 }
 

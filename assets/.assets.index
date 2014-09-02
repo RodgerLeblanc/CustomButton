@@ -1,6 +1,7 @@
 1
-4
+5
 CustomButton.qml
 images/emptyButton.amd
 images/emptyButton.png
+images/voltButton.png
 main.qml
